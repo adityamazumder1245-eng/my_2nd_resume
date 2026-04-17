@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Resume</title>
+    <meta
+      name="description"
+      content="Personal resume website for Your Name featuring experience, projects, skills, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="background-glow background-glow-left"></div>
+      <div class="background-glow background-glow-right"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#hero">Resume</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" id="heroRole"></p>
+            <h1 id="heroName"></h1>
+            <p class="lede" id="heroSummary"></p>
+            <div class="hero-actions">
+              <a class="button button-primary" id="resumeLink" href="#" target="_blank" rel="noreferrer">
+                View Resume
+              </a>
+              <button class="button button-secondary" id="printButton" type="button">
+                Print Page
+              </button>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal stagger-1">
+            <div class="hero-card-header">
+              <span class="status-dot"></span>
+              <span id="availability"></span>
+            </div>
+            <div class="hero-card-body">
+              <p class="label">Location</p>
+              <p id="location"></p>
+              <p class="label">Focus</p>
+              <p id="focusArea"></p>
+              <p class="label">Core strengths</p>
+              <ul class="pill-list" id="highlights"></ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section split-section" id="about">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>What I bring to the table</h2>
+          </div>
+          <div class="about-grid">
+            <article class="panel reveal stagger-1">
+              <p id="aboutText"></p>
+            </article>
+            <article class="panel metrics reveal stagger-2">
+              <div class="metric">
+                <span class="metric-value" id="yearsExperience"></span>
+                <span class="metric-label">Years building</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value" id="projectsCount"></span>
+                <span class="metric-label">Featured projects</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value" id="stackCount"></span>
+                <span class="metric-label">Tools I use</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Work that shaped my approach</h2>
+          </div>
+          <div class="timeline" id="experienceList"></div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <div class="cards-grid" id="projectsList"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools, platforms, and ways of working</h2>
+          </div>
+          <div class="skills-layout">
+            <article class="panel reveal" id="skillsList"></article>
+            <article class="panel reveal stagger-1">
+              <p class="panel-title">How I like to work</p>
+              <ul class="value-list" id="valuesList"></ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-panel reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build something meaningful.</h2>
+            <p id="contactText"></p>
+            <div class="contact-links" id="contactLinks"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="resume-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

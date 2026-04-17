@@ -1,4 +1,3 @@
-# my_2nd_resume
 # Resume Website
 
 A lightweight one-page resume website built with plain HTML, CSS, and JavaScript.
