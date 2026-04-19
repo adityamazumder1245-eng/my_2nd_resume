@@ -94,7 +94,7 @@ const resumeData = {
   contactText:
     "If you're hiring, collaborating, or just want to connect, I'd love to hear from you. Replace the links below with your real email and profiles.",
   contactLinks: [
-    { label: "Email", url: "adityamazumder1245@gmail.com" },
+    { label: "Email", url: "mailto:adityamazumder1245@gmail.com" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/aditya-mazumder-21b413337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
     { label: "GitHub", url: "https://github.com/adityamazumder1245-eng" },
     { label: "Portfolio", url: "#" }
